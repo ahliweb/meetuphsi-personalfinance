@@ -48,7 +48,7 @@ export function useExportTransactions(tenantId?: string, exportFormat: 'csv' | '
         return csvContent;
       }
 
-      return data as FinanceTransaction[];
+      return data as unknown as FinanceTransaction[];
     },
     // Only run this query explicitly when commanded to export
     enabled: false,
