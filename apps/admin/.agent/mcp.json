@@ -6,13 +6,13 @@
         "/home/data/dev_react/awcms-dev/awcms-mcp/dist/index.js"
       ],
       "env": {
-        "SUPABASE_ACCESS_TOKEN": "sbp_6b43e0e40f95b5fc173f83ba04b11d9a6e50e329"
+        "SUPABASE_ACCESS_TOKEN": "${SUPABASE_ACCESS_TOKEN}"
       }
     },
     "context7": {
       "url": "https://mcp.context7.com/mcp",
       "headers": {
-        "CONTEXT7_API_KEY": "ctx7sk-e036f6fd-1d12-4c08-81a5-5e14d0de0f14"
+        "CONTEXT7_API_KEY": "${CONTEXT7_API_KEY}"
       }
     }
   }

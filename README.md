@@ -112,6 +112,17 @@ VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_PUBLISHABLE_KEY=your_publishable_key
 ```
 
+### MCP Agent Tooling (mesin pengembang)
+
+Berkas konfigurasi MCP agent (`mcp.json`, `apps/admin/.agent/mcp*.json`) hanya memuat rujukan variabel lingkungan, tidak pernah nilai rahasia. Isi nilainya di mesin pengembang (shell atau pengelola rahasia), bukan di berkas yang dilacak git:
+
+```env
+CONTEXT7_API_KEY=your_context7_api_key
+SUPABASE_ACCESS_TOKEN=your_supabase_access_token
+```
+
+Bila klien MCP tertentu tidak menginterpolasi `${VAR}`, tulis nilainya di salinan lokal yang tidak di-commit.
+
 ## Cloudflare Configuration
 
 - **R2 Bucket**: awcms-personalfinance

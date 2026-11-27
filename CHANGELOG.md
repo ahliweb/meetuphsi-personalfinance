@@ -4,6 +4,10 @@ All notable changes to the **meetuphsi-personalfinance** project will be documen
 
 ## [Unreleased]
 
+### Security
+
+- Nilai kunci API dan token dikeluarkan dari berkas konfigurasi MCP agent; diganti rujukan variabel lingkungan dan dicatat di README.
+
 ## [3.1.0] - 2026-03-09
 
 ### Added
